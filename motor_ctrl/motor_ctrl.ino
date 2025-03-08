@@ -39,7 +39,7 @@ void loop() {
 
   // Keep stepping while motorRunning is true
   if (motorRunning) {
-    if (lastCommand == 'f') myStepper.step(STEPS_PER_REV / 100); // Small step forward
-    if (lastCommand == 'b') myStepper.step(-STEPS_PER_REV / 100); // Small step backward
+    if (lastCommand == 'f') myStepper.step(STEPS_PER_REV / 1500); // Small step forward
+    if (lastCommand == 'b') myStepper.step(-STEPS_PER_REV / 1500); // Small step backward
   }
 }

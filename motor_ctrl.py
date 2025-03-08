@@ -2,7 +2,9 @@ import serial
 import keyboard
 
 # Open serial connection
-arduino = serial.Serial(arduino_port="COM3", baud_rate=9600, timeout=0.1)
+arduino_port = "COM3"
+baud_rate = 9600
+arduino = serial.Serial(arduino_port, baud_rate, timeout=0.1)
 
 def send_command(command):
     arduino.write(command.encode())
